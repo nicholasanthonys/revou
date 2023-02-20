@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" async defer></script>
+</head>
+
+<body>
+
+    <ul id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <li class="link-item"><img src="assets/images/revou.png" id="nav-logo" /></li>
+            </div>
+            <div class="navbar-links">
+                <li class="link-item "><a href="/">Home</a></li>
+                <li class="link-item "><a href="profile.html">Our Profile</a></li>
+                <li class="link-item "><a href="#">Portfolio</a></li>
+                <li class="link-item "><a href="#">Message Us</a></li>
+            </div>
+
+        </div>
+    </ul>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div id="content">
+        <div id="introduction">
+            <div id="introduction-content">
+                <h2>Hi <span id="name">Name</span>, Welcome to Website</h2>
+                <p>Ini adalah website latihan pertama</p>
+
+            </div>
+        </div>
+
+        <div id="headquarters-section" class="section">
+            <h3>Our Headquarters</h3>
+            <div id="headquarters-container">
+                <div class="headquarters-item">
+                    <img src="assets/images/hq-jakarta.jpg" />
+                    <p>Jakarta</p>
+                </div>
+
+                <div class="headquarters-item">
+                    <img src="assets/images/hq-bandung.jpg" />
+                    <p>Bandung</p>
+                </div>
+
+                <div class="headquarters-item">
+                    <img src="assets/images/hq-surabaya.jpg" />
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="message-us-section" class="section">
+            <div id="message-us-form-container">
+                <table id="form-input-table">
+                    <form id="message-us-form">
+                        <tr>
+                            <td>
+                                <label for="name">
+                                    Nama
+                                </label>
+                            </td>
+                            <td>:</td>
+                            <td><input type="text" id="name-input" name="name" placeholder="Nama" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="birthday">
+                                    Tanggal Lahir
+                                </label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <input type="date" id="birthday-input" name="birthday" placeholder="Tanggal Lahir" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">
+                                    Jenis Kelamin
+                                </label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <div id="gender-input-container">
+                                    <div class="gender-input-item">
+                                        <input type="radio" id="male-gender-input" name="gender-input" value="male"
+                                            checked>
+                                        <label for="male">Laki-laki</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" id="female-gender-input" name="gender-input" value="female">
+                                        <label for="female">Perempuan</label>
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="message">
+                                    Pesan
+                                </label>
+                            </td>
+                            <td>:</td>
+                            <td>
+                                <textarea id="message-input" name="message" placeholder="Pesan" rows="4" cols="50">
+                                </textarea>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+                <button type="submit" form="message-us-form" value="Submit" id="message-us-button">Submit</button>
+            </div>
+            <div id="message-us-form-result">
+                <p>Current Time: <span id="current-time-result"></span></p>
+                <p>Nama: <span id="name-result"></span></p>
+                <p>Tanggal Lahir: <span id="birthday-result"></span></p>
+                <p>Jenis Kelamit: <span id="gender-result"></span></p>
+                <p>Pesan: <span id="message-result"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-container">
+            <div class="footer-author"> Created by RevoU</div>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>
