@@ -1,106 +1,145 @@
+@font-face {
+    font-family: Varella;
+    src: url('../assets/fonts/Varela-Regular.ttf');
+    font-weight: bold;
+}
+
 html {
     height: 100%;
 }
 
-body {
-    background: linear-gradient(to bottom right, #3440B8, #05B8F8);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 40px;
-    width: 100%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+body {
+    /* background: linear-gradient(to bottom right, #3440B8, #05B8F8);
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    width: 100%;
+    margin: 0px;
+
+    height: 100%;
+    font-family: Varella
 }
 
 #content {
-    margin: auto;
+    /* margin: auto;
     width: 80%;
     border-radius: 60px;
     padding: 20px 40px;
     background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; */
+    margin: 100px 200px;
 
 }
 
-.left-col {
-    flex: 1
-}
-
-.right-col {
-    flex: 2
-}
-
-.photo-container img {
-    width: 260px;
-    border-radius: 20%;
-}
-
-.work-links h3,
-.skills h3 {
-    color: grey;
-}
-
-.ul-work-links,
-.ul-skills {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    /* background-color: #333; */
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-    top: 0;
-}
-
-.work-links a,
-.skills li {
-    display: block;
-    color: black;
-    /* padding: 14px 16px; */
-    padding: 8px 10px;
-    text-decoration: none;
-    font-weight: 800;
-}
-
-.ul-skills {
+.header {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.ul-skills li {
-    background-color: lightblue;
-    border-radius: 20px;
-    margin-right: 4px;
-    margin-top: 10px;
+.header-left {
+    position: relative;
+    min-height: 600px;
+    width: 100%;
+}
+
+.header-left-content {
+    position: absolute;
+    bottom: 0px;
+}
+
+.company-name {
+    color: #2E75B5;
+    line-height: 3em;
+    font-size: 80px;
+}
+
+.company-subtitle span {
+    color: #2E75B5;
+}
+
+.header-right img {
+    height: 600px;
+}
+
+.divider {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin: 40px 0px;
+}
+
+.company-profile-title-container {
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 20px;
+}
+
+.section h2 {
+    color: #2E75B5;
+    line-height: 3em;
+}
+
+.section p {
+    line-height: 2em;
+}
+
+.about-us {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-us-left {
+    margin-right: 80px;
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        margin: 20px 20px;
-        width: 100%;
-        height: 100%;
 
-    }
+
+    /* ul#navbar {
+        width: 100vh;
+    } */
 
     #content {
-        margin: 0px;
-        width: 80%;
-        border-radius: 60px;
-        padding: 10px 10px;
-        background-color: white;
+        margin: 0px 0px;
+        padding: 0px 10px;
+    }
+
+    .header {
         display: flex;
-        flex-direction: column;
-
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
     }
 
-    .left-col {
-        flex: 1
+    .header-left {}
+
+    .header-left-content {
+        position: absolute;
+        bottom: 0px;
     }
 
-    .right-col {
-        flex: 1
+    .header-right {}
+
+    .about-us {
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    .company-name {
+        color: #2E75B5;
+        line-height: 3em;
+        font-size: 2em;
+    }
+
+    .header-right img {
+        width: 100%;
+    }
+
 }
